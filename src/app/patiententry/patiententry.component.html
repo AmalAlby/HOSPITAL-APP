@@ -5,34 +5,34 @@
             <div class="row g-3 mt-4">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control">
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Patient ID</label>
-                    <input type="text" class="form-control">
+                    <input name="id" [(ngModel)]="id" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Address</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="address" [(ngModle)]="address" id="" cols="30" rows="10" class="form-control"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">  Number</label>
-                    <input type="text" class="form-control">
+                    <input name="numb" [(ngModel)]="numb" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Doctor Name</label>
-                    <input type="text" class="form-control">
+                    <input name="dname" [(ngModel)]="dname" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Date of Appointment</label>
-                    <input type="date" name="" id="" class="form-control">
+                    <input name="doa" [(ngModel)]="doa" type="date" name="" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Patient Image</label>
-                    <input type="file" name="" id="" class="form-control">
+                    <input name="image" [(ngModel)]="image" type="file" name="" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <button class="btn btn-success">Submit</button>
+                    <button (click)="readvalues()" class="btn btn-success">Submit</button>
                 </div>
             </div>
         </div>
